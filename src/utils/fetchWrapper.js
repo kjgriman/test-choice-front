@@ -12,7 +12,6 @@ function get(url) {
     };
     return fetch(url, requestOptions)
     .then(handleResponse)
-    .catch((err) => handleResponseError(err));
 }
 
 function post(url, body) {
@@ -51,9 +50,6 @@ function authHeader(token) {
     
 }
 
-function handleResponseError(error) {
-    return error
-   }
 
 function handleResponse(response) {
     return response.text().then(text => {

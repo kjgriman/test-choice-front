@@ -1,8 +1,9 @@
-import './stripes.css'
+import styles from './stripes.module.css'
 
 export default function Stripes() {
   return (
-      <div id="stripes">
+      <div className={styles.stripes}>
+        <span></span>
         <span></span>
         <span></span>
         <span></span>

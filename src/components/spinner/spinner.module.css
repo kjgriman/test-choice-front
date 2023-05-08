@@ -4,6 +4,8 @@
     position: fixed;
     width: 100%;
     z-index: 99999;
+    top: 0;
+    left: 0;
 }
 
 .spinner{
@@ -11,4 +13,11 @@
     display: flex;
     position: relative;
     height: 100%;
+}
+
+.spinner span{
+    margin: 0 auto;
+}
+.spinner span span{
+    background-color: #FF6666!important;
 }
